@@ -16,6 +16,10 @@ nav:
     - Differential Expression: trajectory/difftest.md
   - API Reference:
     - preprocess: api/preprocess.md
+    - exprmclust: api/exprmclust.md
+    - TSCANorder: api/TSCANorder.md
+    - difftest: api/difftest.md
+    - plotmclust: api/plotmclust.md
 
 markdown_extensions:
   - pymdownx.highlight
