@@ -192,7 +192,8 @@ def plotmclust(mclustobj, cell_labels=None, MSTorder=None, show_mst=True, ax=Non
         path_centers = np.array([clucenter[c-1] for c in MSTorder])
         ax.plot(path_centers[:, 0], path_centers[:, 1], "r-", lw=3, alpha=0.9, zorder=6)
     ax.scatter(clucenter[:, 0], clucenter[:, 1], c="white", s=120, edgecolors="black", lw=2, zorder=7)
-    for i, (cx, cy) in enumerate(clucenter):
+    for i, center in enumerate(clucenter):
+        cx, cy = center[0], center[1]
         ax.text(cx, cy, str(i+1), ha="center", va="center", fontsize=9, fontweight="bold", zorder=8)
     ax.set_xlabel("PC1")
     ax.set_ylabel("PC2")
