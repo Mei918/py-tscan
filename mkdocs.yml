@@ -1,0 +1,23 @@
+site_name: pytscan
+site_description: Python reimplementation of TSCAN trajectory inference
+site_url: https://Mei918.github.io/py-tscan
+repo_url: https://github.com/Mei918/py-tscan
+
+theme:
+  name: material
+  palette:
+    primary: teal
+
+nav:
+  - Home: index.md
+  - Tutorials:
+    - Basic TSCAN: trajectory/tscan_basic.md
+    - R vs Python Parity: trajectory/r_vs_python.md
+    - Differential Expression: trajectory/difftest.md
+  - API Reference:
+    - preprocess: api/preprocess.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
